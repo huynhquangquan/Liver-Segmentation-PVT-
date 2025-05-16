@@ -15,9 +15,9 @@ Di chuyển các mẫu .nii vào tên folder tương ứng.
 ¦                   
 +---plots                               -> folder chứa kết quả dự đoán plot từ inference.py hoặc LiTSpreprocessed_nb_version.ipynb
 ¦       
-+---preprocess_data                     -> folder chứa dữ liệu đã được xử lý từ preprocess.py
++---preprocess_data                     -> folder chứa dữ liệu đã được xử lý từ preprocess.py (.npz)
 ¦       
-+---taskliver_03                        -> folder chứa dữ liệu raw
++---taskliver_03                        -> folder chứa dữ liệu raw (.nii)
 ¦   +---test
 ¦   ¦       
 ¦   +---train
