@@ -3,30 +3,26 @@
 * Tập Test: https://drive.google.com/drive/folders/0B0vscETPGI1-NDZNd3puMlZiNWM?resourcekey=0-dZUUwJiQnUVYVpRQvs_2tQ
 
 Di chuyển các mẫu .nii vào tên folder tương ứng.
-'' 
-¦   checkcpu.py                         -> kiểm tra số lõi cpu
-¦   inference.py                        -> dự đoán/ predict
-¦   LiTSpreprocessed.py                 -> train model sử dụng dữ liệu .npz (đã được làm nhẹ và qua xử lý) trong preprocess_data
-¦   LiTS_full.py                        -> train model với full code sử dụng dữ liệu .nii (bản gốc)
-¦   preprocess.py                       -> tiền xử lý dữ liệu cho file LiTSpreprocessed.py
-¦   ReadMe.md                           -> md
-¦   requirements.txt                    -> module, libary cần thiết cho project
-¦   LiTSpreprocessed_nb_version         -> LiTSpreprocessed phiên bản notebook
-¦                   
-+---plots                               -> folder chứa kết quả dự đoán plot từ inference.py hoặc LiTSpreprocessed_nb_version.ipynb
-¦       
-+---preprocess_data                     -> folder chứa dữ liệu đã được xử lý từ preprocess.py
-¦       
-+---taskliver_03                        -> folder chứa dữ liệu raw
-¦   +---test
-¦   ¦       
-¦   +---train
-¦       +---segmentations
-¦       ¦       
-¦       +---volumes
-¦               
-+---weights                             -> folder chứa model
-    +---pvt_liver_seg_preprocess.pth    -> model của LiTSpreprocessed (phiên bản python và notebook, chỉ tồn tại 1)
-    ¦       
-    +---pvt_liver_seg.pth               -> model của LiTS_full
-''
+.
+├── checkcpu.py                      # Kiểm tra số lõi CPU
+├── inference.py                     # Dự đoán (predict)
+├── LiTSpreprocessed.py              # Train model sử dụng dữ liệu .npz trong preprocess_data
+├── LiTS_full.py                     # Train model với dữ liệu gốc .nii (full pipeline)
+├── preprocess.py                    # Tiền xử lý dữ liệu cho LiTSpreprocessed.py
+├── ReadMe.md                        # File mô tả dự án
+├── requirements.txt                 # Các module và thư viện cần thiết
+├── LiTSpreprocessed_nb_version/    # Phiên bản notebook của LiTSpreprocessed
+│
+├── plots/                           # Lưu kết quả plot từ inference.py hoặc notebook
+│
+├── preprocess_data/                # Chứa dữ liệu đã xử lý từ preprocess.py (.npz)
+│
+├── taskliver_03/                   # Chứa dữ liệu raw (.nii)
+│   ├── test/
+│   └── train/
+│       ├── segmentations/
+│       └── volumes/
+│
+└── weights/                         # Chứa các mô hình đã huấn luyện
+    ├── pvt_liver_seg_preprocess.pth    # Model từ LiTSpreprocessed
+    └── pvt_liver_seg.pth               # Model từ LiTS_full
