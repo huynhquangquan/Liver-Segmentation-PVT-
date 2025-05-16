@@ -3,7 +3,7 @@
 * Tập Test: https://drive.google.com/drive/folders/0B0vscETPGI1-NDZNd3puMlZiNWM?resourcekey=0-dZUUwJiQnUVYVpRQvs_2tQ
 
 Di chuyển các mẫu .nii vào tên folder tương ứng.
-.
+`
 ├── checkcpu.py                      # Kiểm tra số lõi CPU
 ├── inference.py                     # Dự đoán (predict)
 ├── LiTSpreprocessed.py              # Train model sử dụng dữ liệu .npz trong preprocess_data
@@ -26,3 +26,4 @@ Di chuyển các mẫu .nii vào tên folder tương ứng.
 └── weights/                         # Chứa các mô hình đã huấn luyện
     ├── pvt_liver_seg_preprocess.pth    # Model từ LiTSpreprocessed
     └── pvt_liver_seg.pth               # Model từ LiTS_full
+`
